@@ -19,7 +19,7 @@ flowchart TD
     G --> I
     H --> I
 
-    I --> J("Confidence Check")
+    I --> J{"Confidence Check"}
 
     J -->|Low Confidence| K("Flag for Human Review<br/>Display Predictions & Alternatives")
     K --> L("Agent Reviews & Corrects<br/>Category / Priority / Department")
@@ -33,7 +33,7 @@ flowchart TD
     M --> P("Generate Response Draft")
     P --> Q("Human Agent Review")
 
-    Q --> R("Agent Decision")
+    Q --> R{"Agent Decision"}
 
     R -->|Approve / Edit| S("Send Response")
     R -->|Reject| T("Manual Handling")
