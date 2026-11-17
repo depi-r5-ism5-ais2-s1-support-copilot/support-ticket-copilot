@@ -1,7 +1,9 @@
+
 ## Model Development & Evaluation Workflow
 
 The following workflow illustrates the end-to-end process of developing and evaluating machine learning models for support ticket classification, including dataset preparation, text representation benchmarking, classical machine learning, multi-task transformer fine-tuning, model comparison, and final model selection for deployment.
 
+```mermaid
 flowchart TD
     A["Labeled Support Tickets Dataset<br/>Category / Priority / Sentiment Labels"]
     B["Exploratory Data Analysis"]
@@ -73,3 +75,4 @@ flowchart TD
     class K,L,M,M1,M2,M3 deep
     class N1,N2,N3,O1,O2,O3 decision
     class P,Q,R output
+```
